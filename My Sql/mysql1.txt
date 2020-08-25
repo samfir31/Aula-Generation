@@ -1,0 +1,47 @@
+Create database Servicos_Rh;
+
+CREATE TABLE Funcionarios(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(30) NOT NULL,
+email varchar(50),
+setor varchar(25),
+Salario float (6),
+PRIMARY KEY (codigo)
+);
+
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Ricardo",
+"ricoarrigoni@gmail.com","Leste", 9999) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "João",
+"joao@gmail.com","Leste", 3999) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",1999) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",1500) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",2600) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",800) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",6000) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",3200) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",2200) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",1000) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste", 1300) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",1800) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",5400) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",6300) ;
+INSERT INTO Funcionarios(codigo, nome, email, setor, Salario) VALUES (null, "Maria",
+"maria@gmail.com","Leste",4768) ;
+
+select * From Funcionarios where Salario > 2000;
+
+select * From Funcionarios where Salario < 2000;
+
+update Funcionarios set nome = "Maria José" where codigo =4;

@@ -1,0 +1,49 @@
+Create database Ecommerce;
+
+CREATE TABLE Produtos(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(30) NOT NULL,
+fornecedor varchar(50),
+quantidade int(4),
+preco float (6),
+PRIMARY KEY (codigo)
+);
+
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Nike",20, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Adidas",21, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Oakley",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Mizuno",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Bota",
+"Timberland",30, 499,99) ;
+
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Nike",20, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Adidas",21, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Oakley",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Mizuno",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Bota",
+"Timberland",30, 499,99) ;
+
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Nike",20, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Camiseta",
+"Adidas",21, 129,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Oakley",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Tenis",
+"Mizuno",15, 999,99) ;
+INSERT INTO Produtos(codigo, nome, fornecedor, quantidade, preco) VALUES (null, "Bota",
+"Timberland",30, 499,99) ;
+
+select * From Produtos where preco < 500;
+
+select * From Produtos where preco > 500;
+
+update Produtos set nome = "Tenis" where nome ="Bota";

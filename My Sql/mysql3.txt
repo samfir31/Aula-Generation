@@ -1,0 +1,30 @@
+Create database db_diversos;
+
+CREATE TABLE escola(
+id int(4) NOT NULL,,
+nome varchar(30),
+serie (20),
+idade int(4),
+endereco varchar(60),
+telefone vachar(11),
+email vachar(50),
+PRIMARY KEY (id)
+);
+
+Insert into escola (id,nome, serie, idade, endereco, telefone, email) Values (null,"Samuel","8 ano",20,"Rua da alvorada","1139535353","samuel@email.com"
+
+select * from escola where idade >18
+select * from escola where idade <18
+select * from escola where idade >20 && <25
+
+
+CREATE TABLE petshop(
+id int(4) AUTO_INCREMENT,
+peso float(),
+nome_responsavel varchar(30),
+idade int(4),
+endereco varchar(60),
+telefone vachar(11),
+email vachar(50),
+PRIMARY KEY (id)
+);

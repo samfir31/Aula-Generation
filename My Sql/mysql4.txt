@@ -1,0 +1,48 @@
+//exercicio 1
+
+create database db_generation_game_online
+use db_generation_game_online;
+
+CREATE TABLE tb_classe(
+idclasse int(4) AUTO_INCREMENT,
+nome varchar(20),
+armadura varchar(15),
+arma varchar(15),
+encantamento varchar(15),
+primary key (idclasse)
+);
+
+CREATE TABLE tb_personagem(
+idpersonagem int(4) auto_increment,
+nickname varchar(20),
+guilda varchar(15),
+forca int(5),
+foco int(5),
+destreza int(5),
+habilidade int(5),
+classe int(4),
+primary key(idpersonagem),
+fOREIGN KEY (classe) REFERENCES tb_classe(idclasse)
+);
+
+insert into tb_classe (idclasse, nome, armadura, arma, encantamento) values (null, "arqueiro",2000,5000,10);
+insert into tb_classe (idclasse, nome, armadura, arma, encantamento) values (null, "mago",1500,1000,10);
+insert into tb_classe (idclasse, nome, armadura, arma, encantamento) values (null, "guerreiro",7000,5000,10);
+insert into tb_classe (idclasse, nome, armadura, arma, encantamento) values (null, "assasino",50,35,10);
+insert into tb_classe (idclasse, nome, armadura, arma, encantamento) values (null, "paladino",8000,4000,10);
+
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"sam","allies",50,20,30,10,1);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"Xys","hordem",50,20,30,10,2);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"ka","progresso",50,20,30,10,3);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"rar","allies",50,20,30,10,4);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"eae","allies",50,20,30,10,1);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"waw","hordem",50,20,30,10,2);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"point","progresso",50,20,30,10,3);
+insert into tb_personagem (idpersonagem, nickname, guilda, forca, foco, destreza, habilidade,classe) Values (null,"çlk","allies",50,20,30,10,4);
+
+select * from tb_classe where arma >2000;
+select * from tb_classe where (armadura >1000) and (armadura<2000); 
+Select * from tb_personagem inner join tb_classe on tb_classe.idclasse= tb_personagem.classe where tb_classe.nome="arqueiro";
+
+//exercicio 2
+
